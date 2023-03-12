@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(
-        plugin = {"html:target/cucumber/LearningProjectCucumberTestReport.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+        plugin = {"html:target/cucumber/index.html","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
         glue = {"com.learning.stepdefinitions"},
         monochrome = true,
         tags = "@smoke",
