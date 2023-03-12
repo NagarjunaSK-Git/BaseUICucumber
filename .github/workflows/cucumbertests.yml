@@ -33,7 +33,7 @@ jobs:
     - name: Setup Edge
       uses: browser-actions/setup-edge@v1.0.1
       with:
-       edge-version: default
+       edge-version: stable
     - name: Build and Run Test with Maven
       run: mvn clean test
     - name: Deploy Reports to GitHub Page
