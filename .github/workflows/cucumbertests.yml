@@ -6,21 +6,19 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: UI Tests
-
+name: UI Automaiton Tests 
 on:
   workflow_dispatch:
   push:
     branches:
       - master
-
-
 jobs:
   build:
+    name: Build UI
     runs-on: windows-2019
     steps:
     - uses: actions/checkout@v3
-    - name: Set up JDK 19
+    - name: Setup JDK 19
       uses: actions/setup-java@v3
       with:
         java-version: '19'
