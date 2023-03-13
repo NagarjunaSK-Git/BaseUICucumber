@@ -8,10 +8,13 @@
 
 name: UI Automaiton Tests 
 on:
-  workflow_dispatch:
+  workflow_dispatch: 
+  schedule:
+    - cron: "0 8 * * 0"
   push:
     branches:
       - master
+  
 jobs:
   build:
     name: Build UI
