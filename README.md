@@ -1,6 +1,8 @@
 # BaseUICucumber
 An End-to-End UI Test Automation Framework based upon Selenium WebDriver (4.8+), Cucumber(7.11+), TestNG(7.11+), Maven.
 
+[![UI Automaiton Tests](https://github.com/NagarjunaSK-Git/BaseUICucumber/actions/workflows/cucumbertests.yml/badge.svg)](https://github.com/NagarjunaSK-Git/BaseUICucumber/actions/workflows/cucumbertests.yml)
+
 ## Quick Start
 1) Install [Java JDK19](https://www.oracle.com/java/technologies/javase/jdk19-archive-downloads.html)
 2) Download [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
