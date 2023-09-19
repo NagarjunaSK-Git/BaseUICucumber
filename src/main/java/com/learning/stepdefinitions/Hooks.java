@@ -3,10 +3,7 @@ package com.learning.stepdefinitions;
 import com.learning.base.SeleniumBase;
 import com.learning.context.TestContextShared;
 import com.learning.factory.BrowserDriverFactory;
-import com.learning.utils.CleanUpUtils;
 import io.cucumber.java.*;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 public class Hooks {
@@ -21,7 +18,6 @@ public class Hooks {
     public void beforeHookDriverInitialization(Scenario scenario) {
         System.out.println("BEFORE FIRST: THREAD ID : " + Thread.currentThread().threadId() + "," +
                 "SCENARIO NAME: " + scenario.getName());
-        CleanUpUtils.cleanUpDriverFolders("./drivers");
         driver = new BrowserDriverFactory().initializeDriver();
 
     }
