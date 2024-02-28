@@ -1,5 +1,5 @@
 # BaseUICucumber
-An End-to-End UI Test Automation Framework based upon Selenium WebDriver (4.12+), Cucumber(7.14+), Cucumber-TestNG(7.14+), Maven.
+An End-to-End UI Test Automation Framework based upon Selenium WebDriver (4.18+), Cucumber(7.15+), Cucumber-TestNG(7.15+), Maven.
 
 [![UI Automaiton Tests](https://github.com/NagarjunaSK-Git/BaseUICucumber/actions/workflows/cucumbertests.yml/badge.svg)](https://github.com/NagarjunaSK-Git/BaseUICucumber/actions/workflows/cucumbertests.yml)
 
