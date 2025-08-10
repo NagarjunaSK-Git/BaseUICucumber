@@ -30,8 +30,7 @@ jobs:
     - name: Setup Chrome
       uses: browser-actions/setup-chrome@v2.1.0
       with:
-        chrome-version: 139
-        install-chromedriver: true
+        chrome-version: stable
     - name: Build and Run Test with Maven
       run: mvn clean test
     - name: Deploy Reports to GitHub Page
