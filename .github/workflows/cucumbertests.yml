@@ -30,11 +30,8 @@ jobs:
     - name: Setup Chrome
       uses: browser-actions/setup-chrome@v2.1.0
       with:
-        chrome-version: latest
+        chrome-version: 138
         install-chromedriver: true
-        install-dependencies: true
-    - name: Check Chrome Version
-      run: ${{ steps.setup-chrome.outputs.chrome-path }} --version
     - name: Build and Run Test with Maven
       run: mvn clean test
     - name: Deploy Reports to GitHub Page
