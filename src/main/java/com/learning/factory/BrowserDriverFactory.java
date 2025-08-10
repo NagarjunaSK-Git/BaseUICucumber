@@ -20,15 +20,18 @@ public class BrowserDriverFactory {
                 // Chrome options to allow remote origins added as Chrome Driver 111 has bug.
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--remote-allow-origins=*");
-                WebDriverManager.chromedriver().cachePath("drivers").setup();
+                WebDriverManager.chromedriver().clearResolutionCache().setup();
+                WebDriverManager.chromedriver().setup();
                 driver = new ChromeDriver(options);
             }
             case "FIREFOX" -> {
-                WebDriverManager.firefoxdriver().cachePath("drivers").setup();
+                WebDriverManager.chromedriver().clearResolutionCache().setup();
+                WebDriverManager.chromedriver().setup();
                 driver = new FirefoxDriver();
             }
             case "EDGE" -> {
-                WebDriverManager.edgedriver().cachePath("drivers").setup();
+                WebDriverManager.chromedriver().clearResolutionCache().setup();
+                WebDriverManager.chromedriver().setup();
                 driver = new EdgeDriver();
             }
             default -> throw new IllegalStateException("INVALID BROWSER: " + browser);
