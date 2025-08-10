@@ -28,9 +28,13 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Setup Chrome
-      uses: browser-actions/setup-chrome@v1.1.0
+      uses: browser-actions/setup-chrome@v2.1.0
       with:
         chrome-version: latest
+        install-chromedriver: true
+        install-dependencies: true
+    - name: Check Chrome Version
+      run: ${{ steps.setup-chrome.outputs.chrome-path }} --version
     - name: Build and Run Test with Maven
       run: mvn clean test
     - name: Deploy Reports to GitHub Page
