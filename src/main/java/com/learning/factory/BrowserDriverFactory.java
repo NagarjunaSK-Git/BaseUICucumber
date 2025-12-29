@@ -21,7 +21,6 @@ public class BrowserDriverFactory {
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--remote-allow-origins=*");
                 WebDriverManager.chromedriver().clearResolutionCache().setup();
-                WebDriverManager.chromedriver().driverVersion("138.0.7204.184").setup();
                 driver = new ChromeDriver(options);
             }
             case "FIREFOX" -> {
